@@ -1,7 +1,9 @@
+import { prompts } from '.prompts.js';
+
 const promptEl = document.getElementById("prompt-para");
 const themeDiv = document.getElementById("nav");
 
-const prompts = ["Test1", "Test2", "Test3", "Test4", "Test5"];
+//const prompts = ["Test1", "Test2", "Test3", "Test4", "Test5"];
 
 function generatePrompt() {
     let num = Math.floor(Math.random() * 5);
