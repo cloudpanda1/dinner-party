@@ -24,6 +24,11 @@ body {
     background-color: #edc673;
 }
 
+#bottom {
+  position: fixed;
+  bottom: 0px;
+}
+
 .theme-icon {
     cursor: pointer;
 }
