@@ -17,3 +17,19 @@ function changeTheme() {
     let element = document.body;
     element.classList.toggle("light-mode");
 }
+
+function submit() {
+const thankspara = document.getElementById("thanks")
+const input = document.getElementById("suggest-box")
+     let feed = input.value
+     let request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/934886422257737838/I_c9CbgkrL3S5NEgT5PQpOg4HA329Yk-OlSqfrh2fgUaBfFVRmB3MVrZEIzFmxWJYr9f");
+      request.setRequestHeader('Content-type', 'application/json');
+      let params = {
+        username: "Dinner Party",
+        content: `New suggestion: ${feed}`
+      }
+      request.send(JSON.stringify(params));
+      input.value = ""
+      thankspara.textContent = 'Thank you for your feedback!'
+}
