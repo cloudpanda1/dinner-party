@@ -5,7 +5,7 @@ body {
 }
 
 a:link {
-    color: #ffe1a0;
+    color: #f4bc42;
 }
 
 #nav {
@@ -13,7 +13,7 @@ a:link {
     font-size: 35px;
 }
 
-#generate-btn {
+#generate-btn, #main-btn {
     padding: 10px;
     margin-top: 10px;
     font-size: 15px;
@@ -24,13 +24,8 @@ a:link {
     font-family: "Roboto Mono", monospace;
 }
 
-#generate-btn:hover {
+#generate-btn:hover, #main-btn:hover {
     background-color: #edc673;
-}
-
-#bottom {
-  position: fixed;
-  bottom: 0px;
 }
 
 .theme-icon {
@@ -40,4 +35,15 @@ a:link {
 .light-mode {
     background-color: white;
     color: #2c2f33;
+}
+
+#bottom {
+  position: fixed;
+  bottom: 0px;
+}
+
+#suggest-box {
+  background-color: #1f1e1e;
+  color: white; 
+  width: 50%;
 }
