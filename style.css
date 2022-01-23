@@ -37,6 +37,10 @@ a:link {
     color: #2c2f33;
 }
 
+.error {
+  color: red;
+}
+
 #bottom {
   position: fixed;
   bottom: 0px;
