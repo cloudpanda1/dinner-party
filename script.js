@@ -48,11 +48,11 @@ const input = document.getElementById("suggest-box")
         username: "Dinner Party",
         content: `New suggestion: ${feed}`
       }
+      request.send(JSON.stringify(params));
+      input.value = ""
       if (input.value == '') {
         thankspara.innerHTML = '<p class="error">Please enter something into the text box.</p>'
       } else {
-        request.send(JSON.stringify(params));
-        input.value = ""
         thankspara.innerHTML = '<p>Thank you for your feedback!</p>'
       }
 }
