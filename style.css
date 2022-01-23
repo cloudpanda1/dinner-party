@@ -4,6 +4,10 @@ body {
     color: white;
 }
 
+a:link {
+    color: #ffe1a0;
+}
+
 #nav {
     text-align: left;
     font-size: 35px;
