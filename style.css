@@ -5,7 +5,23 @@ body {
 }
 
 a:link {
-    color: #f4bc42;
+  color: #f4bc42;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f4bc42;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f4bc42;
+  text-decoration: none;
+}
+
+a:active {
+  color: #f4bc42;
+  text-decoration: none;
 }
 
 #nav {
