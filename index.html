@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- formatting -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+        <title>Dinner Party</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="main-text">
+            <center>
+                <div id="nav">
+                    <i onclick="changeTheme()" class="fas fa-code theme-icon"></i>
+                </div>
+                <h1>Dinner Party</h1>
+                <p id="prompt-para"></p>
+                <button id="generate-btn" onclick="generatePrompt()">Generate Prompt</button>
+            </center>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
