@@ -18,6 +18,7 @@ function changeTheme() {
     element.classList.toggle("light-mode");
 }
 
+
 function submit() {
 const thankspara = document.getElementById("thanks")
 const input = document.getElementById("suggest-box")
@@ -29,7 +30,11 @@ const input = document.getElementById("suggest-box")
         username: "Dinner Party",
         content: `New suggestion: ${feed}`
       }
-      request.send(JSON.stringify(params));
-      input.value = ""
-      thankspara.textContent = 'Thank you for your feedback!'
+      if (input.value == '') {
+        thankspara.innerHTML = '<p class="error">Please enter something into the text box.</p>'
+      } else {
+        request.send(JSON.stringify(params));
+        input.value = ""
+        thankspara.innerHTML = '<p>Thank you for your feedback!</p>'
+      }
 }
