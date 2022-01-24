@@ -48,7 +48,7 @@ const thankspara = document.getElementById("thanks")
 const input = document.getElementById("suggest-box")
      let feed = input.value
      let request = new XMLHttpRequest();
-      request.open("POST", WEBHOOK_URL);
+      request.open("POST", "https://discord.com/api/webhooks/934987074979905626/xgTLWn2ePzD9OvgJl9y0ZuKTib83BVrQk4q_M1VKrX9QLI4UU7ZPNHZv_9WMSjQ_C4GW");
       request.setRequestHeader('Content-type', 'application/json');
       let params = {
         username: "Dinner Party",
