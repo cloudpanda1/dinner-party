@@ -39,19 +39,22 @@ function changeTheme() {
     element.classList.toggle("light-mode");
 }
 
-
 function submit() {
 const thankspara = document.getElementById("thanks")
 const input = document.getElementById("suggest-box")
      let feed = input.value
      let request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/934886422257737838/I_c9CbgkrL3S5NEgT5PQpOg4HA329Yk-OlSqfrh2fgUaBfFVRmB3MVrZEIzFmxWJYr9f");
+      request.open("POST", "https://discord.com/api/webhooks/934973895608528947/1R0SO2OP7lyllpUzeu3hkVeD9l060mDHYFEpYUpgqas5KEztGd6BXjgcsu3027sqOVCs");
       request.setRequestHeader('Content-type', 'application/json');
       let params = {
         username: "Dinner Party",
         content: `New suggestion: ${feed}`
       }
-      request.send(JSON.stringify(params));
-      input.value = ""
-      thankspara.innerHTML = '<p>Thank you for your feedback!</p>'
+      if (input.value == '') {
+        thankspara.innerHTML = '<p class="error">Please enter something into the text box.</p>'
+      } else {
+        request.send(JSON.stringify(params));
+        input.value = ""
+        thankspara.innerHTML = '<p>Thank you for your feedback!</p>'
+      }
 }
