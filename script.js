@@ -1,5 +1,6 @@
 const promptEl = document.getElementById("prompt-para");
 const themeDiv = document.getElementById("nav");
+const promptNum = document.getElementById("prompt-num")
 
 const prompts = [
   "Think you are various kitchen appliances.", 
@@ -23,8 +24,11 @@ const prompts = [
   "Scared of everything and everyone.",
   "Obsessed with plants and convinced that everyone is trying to harm the plants."];
 
+let length = prompts.length;
+
+promptNum.textContent = length + ' prompts'
+
 function generatePrompt() {
-    let length = prompts.length;
     let num = Math.floor(Math.random() * length);
     if (promptEl.textContent == prompts[num]) {
         generatePrompt();
