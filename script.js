@@ -18,7 +18,10 @@ const prompts = [
   "Think everything is part of a musical.",
   "Try to hypnotise people randomly and think it works even though it doesn't",
   "Gradually become more anxious as the party continues.",
-  "Someone possessed by a demon."];
+  "Someone possessed by a demon.",
+  "Angry at everything.",
+  "Scared of everything and everyone.",
+  "Obsessed with plants and convinced that everyone is trying to harm the plants."];
 
 function generatePrompt() {
     let length = prompts.length;
@@ -50,9 +53,5 @@ const input = document.getElementById("suggest-box")
       }
       request.send(JSON.stringify(params));
       input.value = ""
-      if (input.value == '') {
-        thankspara.innerHTML = '<p class="error">Please enter something into the text box.</p>'
-      } else {
-        thankspara.innerHTML = '<p>Thank you for your feedback!</p>'
-      }
+      thankspara.innerHTML = '<p>Thank you for your feedback!</p>'
 }
