@@ -22,7 +22,16 @@ const prompts = [
   "Someone possessed by a demon.",
   "Angry at everything.",
   "Scared of everything and everyone.",
-  "Obsessed with plants and convinced that everyone is trying to harm the plants."];
+  "Obsessed with plants and convinced that everyone is trying to harm the plants.",
+  "Attempt to sound as smart as possible.",
+  "Sing everything you say.",
+  "Think you're trapped in a movie.",
+  "You're partially deaf",
+  "You are obsessed with cats.",
+  "Paranoid about being on time yet having no where to be.",
+  "Addicted to all genres of music.",
+  "You're very prone to injury and keep hurting yourself.",
+  "You correct everyone for random reasons.",];
 
 let length = prompts.length;
 
