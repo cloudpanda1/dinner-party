@@ -31,7 +31,18 @@ const prompts = [
   "Paranoid about being on time yet having no where to be.",
   "Addicted to all genres of music.",
   "You're very prone to injury and keep hurting yourself.",
-  "You correct everyone for random reasons.",];
+  "You correct everyone for random reasons.",
+  "In the middle of a sugar rush.",
+  "Popular superhero.",
+  "Owner of a monopoly.",
+  "Wordle.",
+  "Spontaneously combust / explode.",
+  "Came back from the dead.",
+  "You are a zombie.",
+  "Switch between being very over heated to very cold.",
+  "Pyromaniac.",
+  "Trump supporter.",
+  "COVID-20.",];
 
 let length = prompts.length;
 
@@ -57,7 +68,7 @@ const thankspara = document.getElementById("thanks")
 const input = document.getElementById("suggest-box")
      let feed = input.value
      let request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/934987074979905626/xgTLWn2ePzD9OvgJl9y0ZuKTib83BVrQk4q_M1VKrX9QLI4UU7ZPNHZv_9WMSjQ_C4GW");
+      request.open("POST", "https://discord.com/api/webhooks/936128800100610088/L7npCzgIKuco8PHDfcgnlwLc0QmY3LgdwOhhqEp9pDLhwgjgXLZ8yXRCg8hJ-bIDXBW9");
       request.setRequestHeader('Content-type', 'application/json');
       let params = {
         username: "Dinner Party",
