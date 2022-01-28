@@ -42,7 +42,13 @@ const prompts = [
   "Switch between being very over heated to very cold.",
   "Pyromaniac.",
   "Trump supporter.",
-  "COVID-20.",];
+  "COVID-20.",
+  "Starting with 'a,' start each sentence in alphabetical order.",
+  "Have a different emotion every time you talk.",
+  "Make a weird face at the host whenever they're not looking at you.",
+  "Show an unusual preference for words that contain q, x and z.",
+  "Be a person who likes to secretly work out with various objects around the room when no one's looking.",
+];
 
 let length = prompts.length;
 
