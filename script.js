@@ -74,17 +74,17 @@ const thankspara = document.getElementById("thanks")
 const input = document.getElementById("suggest-box")
      let feed = input.value
      let request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/936128800100610088/L7npCzgIKuco8PHDfcgnlwLc0QmY3LgdwOhhqEp9pDLhwgjgXLZ8yXRCg8hJ-bIDXBW9");
+      request.open("POST", "https://discord.com/api/webhooks/936487697537728563/2aE6fiECNwziVb9ZljqOzrGr5wQXLtrRR4TUhQ1HvluC0uAGYzaDY0xxhTko-zPJfjIW");
       request.setRequestHeader('Content-type', 'application/json');
       let params = {
         username: "Dinner Party",
         content: `New suggestion: ${feed}`
       }
       if (input.value == '') {
-        thankspara.innerHTML = '<p class="error">Please enter something into the text box.</p>'
+        thankspara.innerHTML = '<i><p class="error">Please enter something into the text box.</p><i>'
       } else {
         request.send(JSON.stringify(params));
         input.value = ""
-        thankspara.innerHTML = '<p>Thank you for your feedback!</p>'
+        thankspara.innerHTML = '<i><p>Thank you for your feedback!</p><i>'
       }
 }
